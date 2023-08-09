@@ -1,0 +1,84 @@
+:root {
+    /* font-size */
+    --fs-36: 36px;
+    --fs-18: 18px;
+    --fs-14: 14px;
+    --fs-12: 12px;
+
+
+    /* font-weight */
+    --fw-700: 700;
+    --fw-400: 400;
+    --fw-600: 600;
+    /* color */
+    --gray: #595959;
+
+}
+
+.nav-hading {
+    font-size: var(--fs-36);
+    font-weight: var(--fw-700);
+}
+
+.nav-feed {
+    color: var(--gray);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-400);
+}
+
+.jhone {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-400);
+}
+
+.post {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-400);
+}
+
+.like {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-400);
+    color: var(--gray);
+}
+
+.comment {
+
+    font-size: var(--fs-18);
+    font-weight: var(--fw-400);
+}
+
+.copy{
+    font-size: var(--fs-14);
+    font-weight: var(--fw-400);  
+}
+
+@media (max-width:992px) {
+    .like {
+        font-size: var(--fs-12);
+        font-weight: var(--fw-600);
+        color: var(--gray);
+    }
+
+    .nav-hading {
+        font-size: var(--fs-18);
+        font-weight: var(--fw-400);
+    }
+
+    .jhone {
+        font-size: var(--fs-12);
+        font-weight: var(--fw-400);
+    }
+
+    .post {
+        font-size: var(--fs-12);
+        font-weight: var(--fw-400);
+    }
+
+    .comment {
+
+        font-size: var(--fs-12);
+        font-weight: var(--fw-400);
+    }
+    
+}
