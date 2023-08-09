@@ -148,7 +148,7 @@ p {
 .comments:hover>svg {
     fill: gray;
 }
-.dl, ol, ul {
+ul {
 
      margin-bottom: unset !important; 
 }
