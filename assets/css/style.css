@@ -6,28 +6,27 @@
     list-style-type: none;
     box-sizing: border-box;
     text-decoration: none !important;
-
 }
 
 .gap-30 {
     gap: 30px;
 }
-.comme{
+
+.comme {
     display: flex;
-width: 315px;
-padding: 8px 24px;
-align-items: flex-start;
-gap: 10px;
-border-radius: 25.5px;
-border: 1px solid rgba(0, 0, 0, 0.20);
-background: #FFF;
-margin-left: 480px;
+    width: 315px;
+    padding: 8px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 25.5px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    margin-left: 480px;
 }
 
 .nav-feed:hover {
     color: black;
 }
-
 
 .mb-40 {
     margin-bottom: 40px;
@@ -55,7 +54,6 @@ margin-left: 480px;
 }
 
 p {
-
     margin-bottom: unset !important;
 }
 
@@ -73,7 +71,7 @@ p {
 
 .comment {
     display: flex;
-    width: 95%;
+    width: 98%;
     padding: 8px 24px;
     justify-content: space-between;
     border-radius: 25.5px;
@@ -113,32 +111,34 @@ p {
     margin-top: 21px;
 }
 
-.ml-25 {
-    margin-left: 25px;
+.ml-15 {
+    margin-left: 15px;
 }
 
 .mr-30 {
     margin-right: 30px;
 }
-.ml-40{
+
+.ml-40 {
     margin-left: 110%;
 }
-.ml-5{
+
+.ml-5 {
     margin-left: 5px;
 }
-.ml-12{
-    margin-left: 23px;
-}
-.img{
+
+.img {
     width: 16%;
 }
 
-
 .post {
     position: absolute;
-    top: 18%;
-    right: 8%;
+    top: 13%;
+    right: 3%;
     cursor: pointer;
+    background-color: white;
+    padding: 3px 30px;
+    border-radius: 50%;
 }
 
 .like:hover>svg {
@@ -148,21 +148,27 @@ p {
 .comments:hover>svg {
     fill: gray;
 }
-ul {
 
-     margin-bottom: unset !important; 
+ul {
+    margin-bottom: unset !important;
 }
 
-
+.radio {
+    width: 28px;
+    height: 28px;
+}
 
 /* section-2 */
 .img-crd {
     max-width: 889px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #FAFAFA;
+    margin-right: 20px;
+    margin-left: 20px;
 }
+
 @media (min-width:992px) {
-    .srch{
+    .srch {
         display: none;
     }
 }
@@ -181,19 +187,19 @@ ul {
         z-index: 17;
         gap: 5px;
         align-items: end;
-
     }
 
+    .ml-12 {
+        margin-left: 24px;
+    }
 
     label[for="nav-box"]>span {
 
         width: 174%;
         height: 5px;
         background-color: black;
-        /* border-radius: 3px; */
-
     }
-    
+
     .nav-bar {
         display: flex;
         flex-direction: column;
@@ -209,8 +215,6 @@ ul {
         display: none;
         pointer-events: none;
         z-index: 1;
-        
-
     }
 
     input[type="checkbox"]:checked+ul {
@@ -219,25 +223,58 @@ ul {
         opacity: 1;
         pointer-events: all;
     }
-    .comme{
+
+    .comme {
         display: none;
-    }  
-    .post {
-        position: absolute;
-        top: 22%;
-        right: 8%;
-        cursor: pointer;
-    } 
-    .col-9{
-        width: unset !important;
     }
 
+    .post {
+        position: absolute;
+        top: 16%;
+        right: 3%;
+        cursor: pointer;
+        background-color: white;
+        padding: 3px 20px;
+        border-radius: 50%;
+    }
 }
 
 @media (max-width:1450px) {
     .w100 {
         width: 50%;
+    }  
+
+    .comment {
+        display: flex;
+        padding: 8px 0%;
+        justify-content: space-between;
+        border-radius: 25.5px;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        background: #FFF;
     }
+
+    .copy {
+        display: none;
+    }
+
+    .mt-10 {
+        margin-top: 10px;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    .likes {
+        color: gray;
+    }
+
+    .mr-20 {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:1400px) {
 
     .card3 {
         width: 119px;
@@ -255,24 +292,6 @@ ul {
         display: flex;
     }
 
-    .mb-16 {
-        margin-bottom: 1px;
-    }
-
-    .comment {
-        display: flex;
-        padding: 8px 0%;
-        justify-content: space-between;
-        border-radius: 25.5px;
-        border: 1px solid rgba(0, 0, 0, 0.20);
-        background: #FFF;
-    }
-    .copy{
-        display: none;
-    }
-}
-
-@media (max-width:1450px) {
     .most {
         display: inline-flex;
         padding: 5px 12px;
@@ -281,7 +300,11 @@ ul {
         border-radius: 25.5px;
         background: rgba(0, 0, 0, 0.10);
         margin-right: 2px;
+    }
 
+    .most:hover {
+        background-color: black;
+        color: white;
     }
 
     .recently {
@@ -291,22 +314,9 @@ ul {
         gap: 10px;
         border-radius: 25.5px;
         background: rgba(0, 0, 0, 0.10);
-
     }
 
-    .most:hover {
-        background-color: black;
-        color: white;
+    .ml-20 {
+        margin-left: 20px;
     }
-
-    .likes {
-        color: gray;
-    }
-   .mr-20{
-    margin-right: 20px;
-   }
-   .ml-20{
-    margin-left: 20px;
-   }
- 
 }
